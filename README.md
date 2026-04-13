@@ -19,6 +19,7 @@ Tiếng Việt chuyên sâu: System Prompt được tối ưu để tóm tắt t
 Hỗ trợ từ xa: Tích hợp Ngrok để truy cập API công khai từ bất cứ đâu.
 
 Cấu trúc dự án
+
 main.py: Khởi tạo FastAPI server và các Endpoint.
 
 summarier.py: Chứa class TextSummarizer xử lý nạp mô hình và thực hiện tóm tắt.
