@@ -26,18 +26,21 @@ Mở file requests.ipynb bằng Google Colab.
 Bước 2: Cài đặt thư viện
 Chạy Cell đầu tiên trong Notebook hoặc sử dụng lệnh:
 Bước 3: Cấu hình Ngrok (Để lấy link truy cập công khai)
-Đăng ký tài khoản miễn phí tại .
+Đăng ký tài khoản miễn phí tại https://dashboard.ngrok.com/login.
 Lấy Authtoken từ bảng điều khiển Ngrok.
 Dán Token vào cell cấu hình trong Notebook:
 Bước 4: Khởi chạy Server
-Chạy các cell tiếp theo để khởi động Server. Khi thấy dòng Application startup complete, một đường link có đuôi .ngrok-free.app sẽ xuất hiện.
+Chạy các cell tiếp theo để khởi động Server. Khi thấy dòng Application startup complete, một đường link có đuôi .ngrok-free.dev/.ngrok-free.app sẽ xuất hiện.
 
 Hướng dẫn sử dụng
 Cách 1: Sử dụng Swagger UI (Giao diện web)
-Truy cập vào đường link Ngrok được cấp phát, thêm /docs vào cuối (Ví dụ: https://...ngrok-free.app/docs).
+Truy cập vào đường link Ngrok được cấp phát, thêm /docs vào cuối 
+(Ví dụ: https://...ngrok-free.app/docs).
 Tìm đến phương thức POST /generate.
 Nhấn Try it out và nhập nội dung cần tóm tắt vào trường message.
 Nhấn Execute để nhận kết quả.
 
 Cách 2: Sử dụng Script Test (Giao diện Colab)
-Sử dụng file client_test.py đi kèm. Bạn chỉ cần thay đổi base_url thành link Ngrok của mình và chạy:
+Sử dụng file client_test.py và các file new_ đi kèm. Chỉ cần thay đổi base_url thành link Ngrok của mình và thay đổi file new mong muốn tóm tắt trong phần TEST API của request.ipynb. 
+
+Link video demo: https://drive.google.com/drive/u/0/folders/1l475hd_n6uABdFgEZeH9_luLpzSyH3Kq

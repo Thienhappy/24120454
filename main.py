@@ -1,4 +1,4 @@
-import requests , os , nest_asyncio , threading , uvicorn
+import requests , os , uvicorn
 from fastapi import FastAPI, Body
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -12,14 +12,6 @@ app.add_middleware(
     allow_methods=['*'],
     allow_headers=['*'],
 )
-
-nest_asyncio.apply()
-
-def run_server():
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-
-thread = threading.Thread(target=run_server, daemon=True)
-thread.start()
 
 from summarier import TextSummarizer
 summarizer = TextSummarizer("config.yaml")
@@ -55,5 +47,7 @@ async def generate_summary(message: str = Body(..., embed=True)):
         return {"message":message, 
                 "status": "error", 
                 "result": f"Đã xảy ra lỗi: {str(e)}"}
-    
-## END TODO
+
+if __name__ == "__main__":
+    print("Server đang khởi động tại port 8000...")
+    uvicorn.run(app, host="0.0.0.0", port=8000)

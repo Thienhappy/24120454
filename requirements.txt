@@ -5,6 +5,7 @@ uvicorn
 transformers==4.39.0
 torch
 omegaconf
-nest-asyncio
 sentencepiece
 sacremoses
+textwrap
+pyngrok
