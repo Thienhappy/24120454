@@ -9,6 +9,7 @@ Học phần: Triển khai mô hình AI thực tế (Hugging Face to API)
 Dự án này triển khai mô hình ngôn ngữ lớn Qwen2.5-1.5B-Instruct dưới dạng một dịch vụ API sử dụng FastAPI. Hệ thống cho phép người dùng gửi một đoạn văn bản dài và nhận lại bản tóm tắt súc tích, mạch lạc theo phong cách biên tập viên chuyên nghiệp.
 
 Tính năng nổi bật
+
 Mô hình AI: Sử dụng Qwen2.5-1.5B được tối ưu hóa (float16) để chạy mượt mà trên GPU T4 (Google Colab).
 
 Kiến trúc: Tách biệt hoàn toàn giữa Logic AI (summarier.py), API Server (main.py) và Cấu hình (config.yaml).
@@ -32,6 +33,7 @@ requests.ipynb: Notebook hướng dẫn triển khai trên Google Colab.
 
 
 Hướng dẫn cài đặt và triển khai
+
 Bước 1: Chuẩn bị môi trường: Mở file requests.ipynb bằng Google Colab.
 Đảm bảo đã chọn môi trường T4 GPU (Runtime > Change runtime type > T4 GPU).
 
@@ -47,6 +49,7 @@ Bước 4: Khởi chạy Server
 Chạy các cell tiếp theo để khởi động Server. Khi thấy dòng Application startup complete, một đường link có đuôi .ngrok-free.dev/.ngrok-free.app sẽ xuất hiện.
 
 Hướng dẫn sử dụng
+
 Cách 1: Sử dụng Swagger UI (Giao diện web)
 Truy cập vào đường link Ngrok được cấp phát, thêm /docs vào cuối 
 (Ví dụ: https://...ngrok-free.app/docs).
