@@ -24,7 +24,7 @@ Bước 1: Chuẩn bị môi trường
 Mở file requests.ipynb bằng Google Colab.
 Đảm bảo đã chọn môi trường T4 GPU (Runtime > Change runtime type > T4 GPU).
 Bước 2: Cài đặt thư viện
-Chạy Cell đầu tiên trong Notebook hoặc sử dụng lệnh:
+Chạy Cell đầu tiên trong Notebook hoặc sử dụng lệnh: pip install -r requirements.txt
 Bước 3: Cấu hình Ngrok (Để lấy link truy cập công khai)
 Đăng ký tài khoản miễn phí tại https://dashboard.ngrok.com/login.
 Lấy Authtoken từ bảng điều khiển Ngrok.

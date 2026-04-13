@@ -1,5 +1,4 @@
 requests
-os
 fastapi
 uvicorn
 transformers==4.39.0
@@ -7,5 +6,4 @@ torch
 omegaconf
 sentencepiece
 sacremoses
-textwrap
 pyngrok
