@@ -1,0 +1,20 @@
+# Chặn các file đệm của Python (tự sinh khi chạy code)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Chặn thư mục môi trường ảo nếu bạn lỡ tạo
+venv/
+env/
+.venv/
+
+# Chặn các file cấu hình của VS Code
+.vscode/
+
+# Chặn các file rác của hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Chặn các file chứa mã bí mật (nếu có)
+.env
