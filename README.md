@@ -41,6 +41,6 @@ Nhấn Try it out và nhập nội dung cần tóm tắt vào trường message.
 Nhấn Execute để nhận kết quả.
 
 Cách 2: Sử dụng Script Test (Giao diện Colab)
-Sử dụng file client_test.py và các file new_ đi kèm. Chỉ cần thay đổi base_url thành link Ngrok của mình và thay đổi file new mong muốn tóm tắt trong phần TEST API của request.ipynb. 
+Sử dụng file client_test.py và các file new_1, new_2... đi kèm. Chỉ cần thay đổi base_url thành link Ngrok của mình và thay đổi file new mong muốn tóm tắt trong phần TEST API của request.ipynb. 
 
 Link video demo: https://drive.google.com/drive/u/0/folders/1l475hd_n6uABdFgEZeH9_luLpzSyH3Kq
